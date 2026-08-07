@@ -40,7 +40,6 @@
     .section-title{font-size:clamp(22px,4vw,40px);font-weight:900;color:var(--blue);text-align:center;margin-bottom:8px;line-height:1.2}
     .section-sub{font-size:15px;color:var(--text-gray);text-align:center;margin-bottom:44px;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.6}
 
-    /* VIDEO GRID */
     .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1200px;margin:0 auto}
     @media(max-width:900px){.video-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:540px){.video-grid{grid-template-columns:1fr}}
@@ -52,18 +51,6 @@
     .video-quote{font-size:13px;line-height:1.7;color:#444;font-style:italic;flex:1}
     .video-name{font-weight:700;font-size:13px;color:#111;margin-top:12px;padding-top:10px;border-top:1px solid #f0f0f0}
 
-    /* QUOTE MASONRY */
-    .quotes-masonry{columns:3;column-gap:20px;max-width:1200px;margin:0 auto}
-    @media(max-width:900px){.quotes-masonry{columns:2}}
-    @media(max-width:540px){.quotes-masonry{columns:1}}
-    .quote-card{break-inside:avoid;background:var(--white);border-radius:var(--radius);box-shadow:0 3px 16px rgba(0,0,0,.07);padding:24px;margin-bottom:20px;border-top:4px solid var(--yellow)}
-    .quote-mark{font-size:48px;line-height:.8;color:var(--yellow);font-weight:900;margin-bottom:10px}
-    .stars-row{color:var(--yellow);font-size:16px;margin-bottom:12px}
-    .quote-text{font-size:14px;line-height:1.75;color:#333;margin-bottom:14px}
-    .quote-author{font-size:13px;color:var(--text-gray)}
-    .quote-author strong{color:#111}
-
-    /* GOOGLE */
     .google-header{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
     .rating-badge{display:flex;align-items:center;gap:10px;background:var(--white);border:2px solid var(--yellow);border-radius:50px;padding:10px 28px;font-weight:700;font-size:16px;color:var(--blue);margin:0 auto 36px;width:fit-content}
     .rating-badge .stars{color:var(--yellow);font-size:20px}
@@ -77,7 +64,6 @@
     .g-stars{color:var(--yellow);font-size:17px;margin-bottom:10px}
     .g-text{font-size:13px;line-height:1.65;color:#444}
 
-    /* TRUSTPILOT */
     .tp-branding{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:12px}
     .tp-logo-mark{background:#00b67a;color:white;font-size:15px;font-weight:900;padding:5px 10px;border-radius:5px}
     .tp-logo-text{font-weight:800;font-size:18px;color:#333}
@@ -122,135 +108,6 @@
   <p class="section-label">Video Testimonials</p>
   <h2 class="section-title">Our Clients Tell It Better Than We Do</h2>
   <div class="video-grid" id="video-grid"></div>
-</section>
-
-<section class="section section-white">
-  <p class="section-label">Client Quotes</p>
-  <h2 class="section-title">What Our Clients Are Saying</h2>
-  <p class="section-sub">From roofing to painting to HVAC — contractors across the country trust Stone Systems</p>
-  <div class="quotes-masonry">
-
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Highly recommended, they are here to help us contractors that don't like to deal with the website stuff. It feels like you have a partner looking out for you that's actually helping you succeed.</p>
-      <p class="quote-author">— <strong>Adam</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">I've been working with stonesystems for the last few months and it's been absolutely amazing. If you're out there and you need someone that's gonna be there for you... we love working with stonesystems</p>
-      <p class="quote-author">— <strong>Dale</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Shoutout to Kai and Remy for an amazing job that they did doing my website. I've been a pain in the butt every now and then but they did it right. Check them out, you won't be disappointed.</p>
-      <p class="quote-author">— <strong>George</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">If you are looking for someone to get that phone ringing, they're the right fit for you! I'm so happy with them!</p>
-      <p class="quote-author">— <strong>Cody</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">They are the absolute best at what they do. They built me a new website and within 10 days I got my first unpaid for Lead! Best money spent with Kai and StoneSystems</p>
-      <p class="quote-author">— <strong>Armando</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">After going through 2-3 other people I finally found someone that told me the truth. Really easy to work with and very respectable. I would recommend them to anyone!</p>
-      <p class="quote-author">— <strong>James</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Ever since he implemented the new website and landing pages, it's been nothing but great and our conversion has gone way up. We started getting calls almost immediately.</p>
-      <p class="quote-author">— <strong>Manny</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Getting 5 star reviews has always given me anxiety, Kai and his team have taken all that away and I have seen a significant increase in business since I started working with them. I would recommend them to anyone!</p>
-      <p class="quote-author">— <strong>Wendy</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Nothing but professional and awesome in every way, they are absolutely great to work with</p>
-      <p class="quote-author">— <strong>Netane</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them!</p>
-      <p class="quote-author">— <strong>Frank</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">I've seen a significant improvement in my business. Stone Systems has made my life so much easier!</p>
-      <p class="quote-author">— <strong>David</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Thank you to Kai and Stone Systems, our company finally has the web presence it needs and our sales and profits have grown significantly! We look forward to working with them for many years to come!</p>
-      <p class="quote-author">— <strong>Rick</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Their business marketing systems have helped us a lot. Anytime I need anything I can always give them a call. They're super helpful with everything they do, I would recommend them to anybody</p>
-      <p class="quote-author">— <strong>Luckie</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Before I started working with Stonesystems I was paying $1500/month with another service that just was not working for me. Stonesystems is super affordable and they do a fantastic job!</p>
-      <p class="quote-author">— <strong>Lopaka</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">It's been great and all I needed was one sale a month to pay for the service. Since I signed up I've gotten quite a bit more than that. I would recommend them to anyone!</p>
-      <p class="quote-author">— <strong>Adam</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">They made me a brand new website, super professional and it's been absolutely amazing. I cannot say enough good things about them. It turned those 100s of viewers into 100s of clients!</p>
-      <p class="quote-author">— <strong>Mason</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">First I thought it was a scam, but then it turns out they're just a really good company at a really good price. I would recommend them to anyone!</p>
-      <p class="quote-author">— <strong>Matt</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">They've made it so easy with all their automations and the awesome website. I can't thank them enough and you should all definitely check them out</p>
-      <p class="quote-author">— <strong>Ryan</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">He really got everything going well. I'm getting organic leads now that don't cost me any money. I would recommend them to anyone!</p>
-      <p class="quote-author">— <strong>Scott</strong></p>
-    </div>
-    <div class="quote-card">
-      <div class="quote-mark">"</div>
-      <div class="stars-row">★★★★★</div>
-      <p class="quote-text">Big shoutout to Kai and Stone Systems for helping me with my website and getting me more leads. I would recommend them to anyone!</p>
-      <p class="quote-author">— <strong>Zach</strong></p>
-    </div>
-  </div>
 </section>
 
 <section class="section section-gray">
@@ -1063,16 +920,13 @@ const videoData = [{"company": "Adam", "niche": "Contractor", "video": "https://
       '</div>';
     grid.appendChild(card);
   });
-
   const videos = document.querySelectorAll('video[data-src]');
   if('IntersectionObserver' in window){
     const obs = new IntersectionObserver(function(entries){
       entries.forEach(function(e){
         if(e.isIntersecting){
-          const v=e.target;
-          const src=v.getAttribute('data-src');
-          if(src&&!v.src){v.src=src;v.load();}
-          obs.unobserve(v);
+          const v=e.target;const src=v.getAttribute('data-src');
+          if(src&&!v.src){v.src=src;v.load();}obs.unobserve(v);
         }
       });
     },{rootMargin:'300px'});
