@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone Systems Reviews — Real Contractors. Real Results.</title>
+  <meta name="description" content="See 1,150+ contractor reviews of Stone Systems. Video testimonials, Google reviews, and Trustpilot ratings from real home service business owners.">
+  <meta property="og:title" content="Stone Systems Reviews — Real Contractors. Real Results.">
+  <meta property="og:description" content="Don't take our word for it. See what 1,150+ contractors say about Stone Systems.">
+  <meta property="og:url" content="https://stonesystemsreviews.com">
+  <meta property="og:image" content="https://stonesystems.io/images/newlogo.png">
+  <link rel="canonical" href="https://stonesystemsreviews.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --gray: #f1f1f1;
+      --yellow: #e8a743;
+      --dark-yellow: #c88318;
+      --blue: #1f2236;
+      --text-gray: #666;
+      --radius: 10px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Sora', sans-serif; background: var(--white); color: var(--black); }
+
+    /* HEADER */
+    .site-header {
+      background: var(--white);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .site-header img { height: 56px; width: auto; }
+
+    /* HERO */
+    .hero {
+      background: var(--blue);
+      color: var(--white);
+      text-align: center;
+      padding: 80px 24px 60px;
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .hero h1 span { color: var(--yellow); }
+    .hero .subtitle {
+      font-size: clamp(16px, 2.5vw, 20px);
+      opacity: 0.85;
+      max-width: 640px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+    }
+    .stats-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .stat-badge {
+      background: rgba(255,255,255,0.08);
+      border: 2px solid var(--yellow);
+      border-radius: 50px;
+      padding: 10px 24px;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--white);
+    }
+    .stat-badge span { color: var(--yellow); }
+    .hero-cta {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 900;
+      font-size: 18px;
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .hero-cta:hover { background: var(--dark-yellow); color: var(--white); }
+
+    /* SECTION COMMON */
+    .section { padding: 64px 24px; }
+    .section-gray { background: var(--gray); }
+    .section-white { background: var(--white); }
+    .section-title {
+      font-size: clamp(26px, 4vw, 44px);
+      font-weight: 900;
+      color: var(--blue);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .section-sub {
+      font-size: 16px;
+      color: var(--text-gray);
+      text-align: center;
+      margin-bottom: 48px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* VIDEO GRID */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    @media (max-width: 900px) { .video-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .video-grid { grid-template-columns: 1fr; } }
+    .video-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .video-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.13); }
+    .video-card video {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: #1a1a2e;
+      display: block;
+    }
+    .video-card-info {
+      padding: 14px 16px;
+    }
+    .video-company { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+    .video-niche {
+      display: inline-block;
+      background: var(--gray);
+      color: var(--text-gray);
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    /* QUOTE CARDS */
+    .quotes-masonry {
+      columns: 3;
+      column-gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    @media (max-width: 900px) { .quotes-masonry { columns: 2; } }
+    @media (max-width: 560px) { .quotes-masonry { columns: 1; } }
+    .quote-card {
+      break-inside: avoid;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 3px 16px rgba(0,0,0,0.07);
+      padding: 24px;
+      margin-bottom: 24px;
+      border-top: 4px solid var(--yellow);
+    }
+    .quote-mark {
+      font-size: 56px;
+      line-height: 0.8;
+      color: var(--yellow);
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .stars-row { color: var(--yellow); font-size: 18px; margin-bottom: 12px; }
+    .quote-text { font-size: 15px; line-height: 1.7; color: #333; margin-bottom: 16px; }
+    .quote-author { font-size: 14px; color: var(--text-gray); }
+    .quote-author strong { color: var(--black); }
+
+    /* GOOGLE SECTION */
+    .google-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .rating-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      border: 2px solid var(--yellow);
+      border-radius: 50px;
+      padding: 10px 24px;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--blue);
+      margin: 0 auto 24px;
+      width: fit-content;
+    }
+    .rating-badge .stars { color: var(--yellow); }
+    .placeholder-box {
+      max-width: 600px;
+      margin: 24px auto 0;
+      border: 2px solid var(--yellow);
+      border-radius: var(--radius);
+      padding: 24px 32px;
+      background: #fffdf5;
+      text-align: center;
+    }
+    .placeholder-box p { font-size: 15px; color: #555; line-height: 1.6; margin-top: 8px; }
+
+    /* TRUSTPILOT */
+    .tp-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .tp-logo {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 800;
+      font-size: 20px;
+    }
+    .tp-logo-star { background: #00b67a; color: white; padding: 4px 8px; border-radius: 4px; font-size: 16px; }
+    .tp-grid {
+      columns: 3;
+      column-gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    @media (max-width: 900px) { .tp-grid { columns: 2; } }
+    @media (max-width: 560px) { .tp-grid { columns: 1; } }
+    .tp-card {
+      break-inside: avoid;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 3px 16px rgba(0,0,0,0.07);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 4px solid #00b67a;
+    }
+    .tp-card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+    .tp-stars { font-size: 18px; }
+    .tp-rating-num { font-size: 13px; color: var(--text-gray); }
+    .tp-title { font-weight: 700; font-size: 14px; margin-bottom: 8px; color: var(--blue); line-height: 1.4; }
+    .tp-text { font-size: 14px; line-height: 1.65; color: #444; margin-bottom: 12px; }
+    .tp-footer { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-gray); margin-top: auto; }
+    .tp-author { font-weight: 600; color: var(--black); }
+    .tp-date { color: #aaa; }
+
+    /* FOOTER */
+    .site-footer {
+      background: var(--blue);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 14px;
+    }
+    .site-footer a { color: var(--yellow); text-decoration: none; }
+    .site-footer a:hover { color: var(--dark-yellow); }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="https://stonesystems.io">
+    <img src="https://stonesystems.io/images/newlogo.png" alt="Stone Systems" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+    <span style="display:none; font-weight:900; font-size:22px; color:#1f2236;">Stone Systems</span>
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Don't Take Our <span>Word</span> For It.</h1>
+  <p class="subtitle">Real contractors. Real results. See what 1,150+ clients say about Stone Systems.</p>
+  <div class="stats-row">
+    <div class="stat-badge"><span>1,150+</span> Active Clients</div>
+    <div class="stat-badge"><span>4.1★</span> on Trustpilot</div>
+    <div class="stat-badge"><span>4.8★</span> on Google</div>
+  </div>
+  <a href="https://grow.stonesystems.io?utm_source=reviews-page&utm_medium=cta&utm_campaign=book-a-call" class="hero-cta" target="_blank" rel="noopener">Book A Free Call →</a>
+</section>
+
+<!-- VIDEO TESTIMONIALS -->
+<section class="section section-gray">
+  <h2 class="section-title">Video Testimonials</h2>
+  <p class="section-sub">Our clients tell it better than we do</p>
+  <div class="video-grid" id="video-grid">
+    <!-- populated by JS -->
+  </div>
+</section>
+
+<!-- WRITTEN QUOTES -->
+<section class="section section-white">
+  <h2 class="section-title">What Our Clients Are Saying</h2>
+  <p class="section-sub">From roofing to painting to plumbing — contractors across the country trust Stone Systems</p>
+  <div class="quotes-masonry">
+    
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Highly recommended, they are here to help us contractors that don't like to deal with the website stuff. It feels like you have a partner looking out for you that's actually helping you succeed.</p>
+      <p class="quote-author">- <strong>Adam</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">I've been working with stonesystems for the last few months and it's been absolutely amazing. If you're out there and you need someone that's gonna be there for you... we love working with stonesystems</p>
+      <p class="quote-author">- <strong>Dale</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Shoutout to Kai and Remy for an amazing job that they did doing my website. I've been a pain in the butt every now and then but they did it right. Check them out, you won't be disappointed.</p>
+      <p class="quote-author">- <strong>George</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">If you are looking for someone to get that phone ringing, they're the right fit for you! I'm so happy with them!</p>
+      <p class="quote-author">- <strong>Cody</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">They are the absolute best at what they do. They built me a new website and within 10 days I got my first unpaid for Lead! Best money spent with Kai and StoneSystems</p>
+      <p class="quote-author">- <strong>Armando</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">After going through 2-3 other people I finally found someone that told me the truth. Really easy to work with and very respectable. I would recommend them to anyone!</p>
+      <p class="quote-author">- <strong>James</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Ever since he implemented the new website and landing pages, it's been nothing but great and our conversion has gone way up. We started getting calls almost immediately.</p>
+      <p class="quote-author">- <strong>Manny</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Getting 5 star reviews has always given me anxiety, Kai and his team have taken all that away and I have seen a significant increase in business since I started working with them. I would recommend them to anyone!</p>
+      <p class="quote-author">- <strong>Wendy</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Nothing but professional and awesome in every way, they are absolutely great to work with</p>
+      <p class="quote-author">- <strong>Netane</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">I would highly recommend going with Stone Systems, my business has ramped up, literally overnight and their prices are very affordable. Feel free to reach out to me personally with any questions about them!</p>
+      <p class="quote-author">- <strong>Frank</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">I've seen a significant improvement in my business. Stone Systems has made my life so much easier!</p>
+      <p class="quote-author">- <strong>David</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Thank you to Kai and Stone Systems, our company finally has the web presence it needs and our sales and profits have grown significantly! We look forward to working with them for many years to come!</p>
+      <p class="quote-author">- <strong>Rick</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Their business marketing systems have helped us a lot. Anytime I need anything I can always give them a call. They're super helpful with everything they do, I would recommend them to anybody</p>
+      <p class="quote-author">- <strong>Luckie</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Before I started working with Stonesystems I was paying $1500/month with another service that just was not working for me. Stonesystems is super affordable and they do a fantastic job!</p>
+      <p class="quote-author">- <strong>Lopaka</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">It's been great and all I needed was one sale a month to pay for the service. Since I signed up I've gotten quite a bit more than that. I would recommend them to anyone!</p>
+      <p class="quote-author">- <strong>Adam</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">They made me a brand new website, super professional and it's been absolutely amazing. I cannot say enough good things about them. It turned those 100s of viewers into 100s of clients!</p>
+      <p class="quote-author">- <strong>Mason</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">First I thought it was a scam, but then it turns out they're just a really good company at a really good price. I would recommend them to anyone!</p>
+      <p class="quote-author">- <strong>Matt</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">They've made it so easy with all their automations and the awesome website. I can't thank them enough and you should all definitely check them out</p>
+      <p class="quote-author">- <strong>Ryan</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">He really got everything going well. I'm getting organic leads now that don't cost me any money. I would recommend them to anyone!</p>
+      <p class="quote-author">- <strong>Scott</strong></p>
+    </div>
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="stars-row">★★★★★</div>
+      <p class="quote-text">Big shoutout to Kai and Stone Systems for helping me with my website and getting me more leads. I would recommend them to anyone!</p>
+      <p class="quote-author">- <strong>Zach</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- GOOGLE REVIEWS -->
+<section class="section section-gray">
+  <div class="google-header">
+    <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.08 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-3.59-13.46-8.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+    <h2 class="section-title" style="margin-bottom:0">Rated 4.8 ★ on Google</h2>
+  </div>
+  <p class="section-sub">Based on 56+ verified reviews</p>
+  <div class="rating-badge">
+    <span class="stars">★★★★★</span>
+    <span>4.8 / 5 — 56+ Google Reviews</span>
+  </div>
+  <div class="placeholder-box">
+    <p style="font-size:24px">⚙️</p>
+    <p><strong>Google reviews are coming soon.</strong><br>We're in the process of connecting live reviews here. Check back shortly.</p>
+  </div>
+</section>
+
+<!-- TRUSTPILOT REVIEWS -->
+<section class="section section-white">
+  <div class="tp-header-row">
+    <div class="tp-logo">
+      <span class="tp-logo-star">★</span>
+      <span>Trustpilot</span>
+    </div>
+  </div>
+  <h2 class="section-title">Rated 4.1 ★ on Trustpilot</h2>
+  <p class="section-sub">103 positive reviews from verified customers</p>
+  <div class="tp-grid">
+    
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Service</p>
+      <p class="tp-text">Great service</p>
+      <div class="tp-footer">
+        <span class="tp-author">Jackie Diekman</span>
+        <span class="tp-date">August 04, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Unmatched Service and Quality</p>
+      <p class="tp-text">This company has excellent communication through entire process. Very thorough in meeting my expectations and needs. Would reccomend to anyone looking to strategically market your business</p>
+      <div class="tp-footer">
+        <span class="tp-author">Taylor Hankins</span>
+        <span class="tp-date">August 03, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Manuel is great to work with!</p>
+      
+      <div class="tp-footer">
+        <span class="tp-author">brandon adams</span>
+        <span class="tp-date">August 01, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Knowledgeable and Patient</p>
+      
+      <div class="tp-footer">
+        <span class="tp-author">Travis Lassiter</span>
+        <span class="tp-date">July 31, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Stone Systems has been the most…</p>
+      <p class="tp-text">Stone Systems has been the most attentive Web Site development and Marketing company I’ve ever dealt with. I wasted more than $25,000 with other companies before discovering Manuel at Stone systems. He knows his craft, he follows, up and he’s a great guy to work with. Two thumbs up. I highly recommend this Company.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Don lawrence</span>
+        <span class="tp-date">July 29, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#e8a743">★★★★☆</span>
+        <span class="tp-rating-num">4.0</span>
+      </div>
+      <p class="tp-title">Without a doubt Sebastian is awesome</p>
+      <p class="tp-text">Without a doubt Sebastian is awesome. He made our experience with Stone Systems great. He has always been kind, gracious, concerned and informative. We are grateful for everything we have been able to speak with him. He really does care. If you have a concern or a problem he wants to help you address the concern and or fix the problem. When Stone Systems got him they got a good one. And being a business owner I understand the importance of having good ones on your team.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Jerry Turner</span>
+        <span class="tp-date">July 28, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">TJ and his team has made a real…</p>
+      <p class="tp-text">TJ and his team has made a real difference in my business with getting my website set up and the visibility their system has created.</p>
+      <div class="tp-footer">
+        <span class="tp-author">customer</span>
+        <span class="tp-date">July 28, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">James is has done a great job for me…</p>
+      <p class="tp-text">James is has done a great job for me getting my web site up and going it really looks great lot of great info on the website stone system is great company</p>
+      <div class="tp-footer">
+        <span class="tp-author">Mark Allison</span>
+        <span class="tp-date">July 27, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Honest & Trustworthy</p>
+      <p class="tp-text">Great honest and trustworthy company. They keep it real and guide you through everything!  They fixed my website and helped me start getting reviews.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Andrew</span>
+        <span class="tp-date">July 24, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Great Experience with Sebastian from…</p>
+      <p class="tp-text">Great Experience with Sebastian from Stone Systems.He was able to help me and guide me on an Issue that I was having, even on a different platform other then thireI highly recommend!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Tomer A.</span>
+        <span class="tp-date">July 21, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Really nice guy he explains everything…</p>
+      <p class="tp-text">Really nice guy he explains everything good!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Rodrigo Alejandro Escamilla re</span>
+        <span class="tp-date">July 21, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Easy to work with</p>
+      <p class="tp-text">Easy to work with, responsive, quick!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Garrett Floerke</span>
+        <span class="tp-date">July 20, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Stone Systems is the real deal</p>
+      <p class="tp-text">Stone Systems is the exact program I needed to go from 0 to 1 in business - I had no prior experience before signing up and now I have the skills needed to run my own agency and generate + close deals. Extremely active community, Kai and the team is incredibly helpful !</p>
+      <div class="tp-footer">
+        <span class="tp-author">Christian Bonnier</span>
+        <span class="tp-date">July 20, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">These guys are great</p>
+      <p class="tp-text">These guys are great. They'll build a really solid foundation for your business. Great experience.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Jacob</span>
+        <span class="tp-date">July 20, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Amazing staff very helpful to me and my…</p>
+      <p class="tp-text">Amazing staff very helpful to me and my business</p>
+      <div class="tp-footer">
+        <span class="tp-author">Ian Issa</span>
+        <span class="tp-date">July 19, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Kai and Mike generated a lot of extra…</p>
+      <p class="tp-text">Kai and Mike generated a lot of extra work for my small business, they walked me through everything very thoroughly and their system is so straightforward, Im not really an it person and I had the feeling they genuinely cared for my success and didnt mind taking their time dor all my stupid questions, thanks again guys & keep the leads coming in!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Matthew Vht</span>
+        <span class="tp-date">July 19, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Awesome team and awesome systems that…</p>
+      <p class="tp-text">Awesome team and awesome systems that will elevate any business. 5 stars!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Reece Dixon</span>
+        <span class="tp-date">July 18, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Kai and his team are the best</p>
+      <p class="tp-text">Kai and his team are the best! They helped me with multiple aspects of my business and I highly recommend them!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Dominic Baptist</span>
+        <span class="tp-date">July 18, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Working with Stone Systems was one of…</p>
+      <p class="tp-text">Working with Stone Systems was one of the best decisions I made for my business. They delivered a clean, professional website, kept me updated throughout the process, and made everything incredibly simple. If you're looking for a team that delivers quality work and excellent customer service, I highly recommend them.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Declan Geraghty</span>
+        <span class="tp-date">July 18, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Big help with my marketing needs</p>
+      <p class="tp-text">Big help with my marketing needs. They got me set up with an amazing website and system. 10/10 recommend Stone Systems!!</p>
+      <div class="tp-footer">
+        <span class="tp-author">James Clark</span>
+        <span class="tp-date">July 18, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">These guys have the best customer…</p>
+      <p class="tp-text">These guys have the best customer experience, 10/10 would recommend. Our team ran into a slight problem (our fault) and they even went out of their way to solve it. These guys are the best, we got results pretty quickly too. Stone Systems works great.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Colin Knutson</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Great service</p>
+      <p class="tp-text">Great service. Onboarding was very straightforward, the team was very responsive, and they took time to answer all of my questions. Overall, very happy with the end product.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Remy</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Fantastic company</p>
+      <p class="tp-text">Fantastic company. Would recommend to all my family and friends. 10/10</p>
+      <div class="tp-footer">
+        <span class="tp-author">Blake Cordes</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Clear expectations</p>
+      <p class="tp-text">Clear expectations, clear communication, no baloney. They did a great job!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Clay Lawrence</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Incredible Company!</p>
+      <p class="tp-text">Incredible Company!! Could not recommend more</p>
+      <div class="tp-footer">
+        <span class="tp-author">Hayden Larance</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Kai and Michael at stone systems…</p>
+      <p class="tp-text">Kai and Michael at stone systems absolutely amazing guys. The work that they put into growing this company is truly inspiring. There is a reason they are the biggest marketing agency in the US for contractors! Any 1 star reviews on here are all petty and a waste of time to read. Personally I would give more then 5 stars if I could. Great system great service, and a amazing company!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Rafael</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">S-Tier system</p>
+      
+      <div class="tp-footer">
+        <span class="tp-author">Kent Depwe</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">One Stop Shop For Your Business</p>
+      <p class="tp-text">Kai and his team we're exceptional in helping getting my business off the ground and running. I have a start-up and we needed our hands help when it came to the website and also the marketing and maintenance. Can't recommend them enough!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Connor Newell</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">There team implemented our website and…</p>
+      <p class="tp-text">There team implemented our website and we started running google ads to it. I run a moving company and have yet to find an agency that truly has helped us for such an amazing price. We are converting a lot more leads than we have before thanks to the systems they implemented into my business. Thank you so much to the team at Stone Systems!</p>
+      <div class="tp-footer">
+        <span class="tp-author">JP Farrell</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Worked with mike for a year with my…</p>
+      <p class="tp-text">Worked with mike for a year with my website for our landscaping biz  appreciate the help a ton.look forward to working with him for years to come</p>
+      <div class="tp-footer">
+        <span class="tp-author">Aryan Sodha</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">These guys are on another level</p>
+      <p class="tp-text">These guys are on another level. Highly recommend</p>
+      <div class="tp-footer">
+        <span class="tp-author">Kieran O’Sullivan</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">These guys are the real deal</p>
+      <p class="tp-text">These guys are the real deal. The best in the business. I love the website they created for me and the text messages are a gamechanger in my business. I used to have everything sent to an email which was stupid. I highly recommend these guys</p>
+      <div class="tp-footer">
+        <span class="tp-author">Clayton . Self-Development</span>
+        <span class="tp-date">July 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Sebastian is professional and has taken…</p>
+      <p class="tp-text">Sebastian is professional and has taken great care of my company.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Bryan Heath</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">⭐⭐⭐⭐⭐</p>
+      <p class="tp-text">⭐⭐⭐⭐⭐I’ve been working with Stone Systems for the past two months, and my experience with this company has been absolutely incredible. They’ve helped redesign my website, handle my calls, schedule clients, and book appointments—making my life as a business owner simpler and allowing me to focus on what I do best.Oscar is the gentleman who has been helping me with everything on the website, and by far, my experience working with him has been fantastic. The entire team is friendly, professional, organized, detailed, and extremely easy to work with.As a small business owner, I’m always very careful about where my money goes and what I’m investing in. I can honestly say that the monthly payment I make to Stone Systems is extremely affordable for everything they do. I’m not overwhelmed with some huge, stressful monthly bill, yet they’re handling services that other companies would charge a small fortune for.What really stands out to me is how much they genuinely care about helping my business grow. They continue to go above and beyond to help get my name and my brand out there. There is so much work that happens behind the scenes that customers never see, and I truly appreciate everything they’re doing to help make my life easier and my business stronger.If you’re a small business owner looking for a company to help with your website, manage your calls and appointments, strengthen your brand, and help your business grow, I highly recommend Stone Systems. Hands down, they have exceeded my expectations.I just want to say thank you to Oscar and the entire team. Thank you for helping me grow. Thank you for believing in my business. And thank you for taking care of all the hard work behind the scenes that nobody sees. I truly appreciate everything you guys do.Five stars all the way. ⭐⭐⭐⭐⭐</p>
+      <div class="tp-footer">
+        <span class="tp-author">Jason Rader</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">I personally know the owners</p>
+      <p class="tp-text">I personally know the owners, Kai and Mike, and can attest that they are some of the leading experts at web design and marketing for local service businesses. Not only are they great at what they do, but they are genuinely good people. It's a pleasure working with them!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Lorenzo Sanchez</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Great company</p>
+      <p class="tp-text">Great company, work always done on time and as expected. Would definitely recommend.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Pavel Ketsuk</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">10/10 highly recommend them</p>
+      <p class="tp-text">10/10 highly recommend them</p>
+      <div class="tp-footer">
+        <span class="tp-author">Cody Cavenaugh</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Great and perfect job</p>
+      <p class="tp-text">Great and perfect job , thanks</p>
+      <div class="tp-footer">
+        <span class="tp-author">Hervé Vanhoutte</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Good stuff</p>
+      <p class="tp-text">Good stuff, improved my business tremendously</p>
+      <div class="tp-footer">
+        <span class="tp-author">Isabelle MacWherter</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Highly recommend Stone Systems</p>
+      <p class="tp-text">I worked with Michael at Stone Systems and had a great experience from start to finish. He was fast to get things moving and patient throughout the whole process, taking the time to walk me through everything and answer my questions without ever making me feel rushed. Best of all, I've actually seen results since we started. If you're a contractor looking for someone who does what they say and genuinely helps your business, I'd recommend giving them a shot.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Jonathan Depaepe</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Solíd work would recommend</p>
+      <p class="tp-text">Solíd work, solid people and Good communication all the way through. Thank you StoneSystems!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Saray Cadavid Mesa</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">A different kind of compsny</p>
+      <p class="tp-text">Stone systems is a different kind of company. I’ve been working with Michael and the rest of the team for a little while now and they are extremely professional. The onboarding was seamless and umer helped me get on track. Best decision to work with them.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Manuel Ojeda</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Stone Systems gets results!</p>
+      <p class="tp-text">I’ve worked with Michael at Stone Systems for a few months now. He is awesome! Helped get my organization’s digital presence and website on track. He is thorough, communicative, and genuinely wants to help my business succeed. After trying another digital marketing firm that left a lot to be desired, working with Michael has been such a weight lifted off my shoulders. I highly recommend Stone Systems!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Nick</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Been with these guys for 4yrs</p>
+      <p class="tp-text">Been with these guys for 4yrs, done nothing but helped my business. I think people have a tendency to hate on these types of agencies & I get it but I’ve been super stoked!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Ben Leader</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">It's hard choosing a marketing company…</p>
+      <p class="tp-text">It's hard choosing a marketing company but this one is worth it. It's a little scary being tied to payments but they've produced a website worth bragging about and given us a lead service worth using.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Easton Stauffer</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Speed that understands business</p>
+      
+      <div class="tp-footer">
+        <span class="tp-author">Josh</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Great company</p>
+      <p class="tp-text">Great company, met some amazing people. Will always be thankful!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Fabio Maldonado</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">5 stars!</p>
+      <p class="tp-text">These guys are great! Zero complaints.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Eric Fasnacht</span>
+        <span class="tp-date">July 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">These guys are outstanding</p>
+      <p class="tp-text">These guys are outstanding!  Great results in a short period of time.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Brian Sommers</span>
+        <span class="tp-date">July 15, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Easy to work with.</p>
+      <p class="tp-text">Easy to work with.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Alejandro Garcia</span>
+        <span class="tp-date">July 15, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Stone Systems was really helpful!</p>
+      
+      <div class="tp-footer">
+        <span class="tp-author">Erik</span>
+        <span class="tp-date">July 15, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Manuel was awesome putting the website…</p>
+      <p class="tp-text">Manuel was awesome putting the website together and getting us on boarded. He was knowledgeable and walked us through each step. Manuel made sure that we had all contact info in case of any issues to ensure we were not alone in navigating. He never rushed and had patience with all questions and concerns we had.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Julie D</span>
+        <span class="tp-date">July 14, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Manuel made it a great and easy…</p>
+      <p class="tp-text">Manuel made it a great and easy experience.</p>
+      <div class="tp-footer">
+        <span class="tp-author">UR POWER SOURCE</span>
+        <span class="tp-date">July 13, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Working with Manuel</p>
+      <p class="tp-text">I worked with Manuel with setting up my website. He was very patient and open to any and all suggestions. Manuel went above and beyond for me in tailoring the website. 5* for Manny</p>
+      <div class="tp-footer">
+        <span class="tp-author">Ryan Scott</span>
+        <span class="tp-date">July 12, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Sign up now</p>
+      <p class="tp-text">Sergio is so helpful and gets everything done. Stone systems has been great, seeing more results than we ever have! Would recommend this company to any business trying to grow!</p>
+      <div class="tp-footer">
+        <span class="tp-author">jessica micholofki</span>
+        <span class="tp-date">July 10, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Sebastian was the greatest person to…</p>
+      <p class="tp-text">Sebastian was the greatest person to deal with he has been easy to get ahold of and great personality!!!! I highly recommend Stoney systems for your marketing!!!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Brittany Poe</span>
+        <span class="tp-date">July 09, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Easy Communication</p>
+      <p class="tp-text">James has been great to work with, he goes the extra mile! I also love communication through text. Very easy to let them know what I need!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Kale Grittner</span>
+        <span class="tp-date">July 09, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Straight up fair price</p>
+      <p class="tp-text">Finding a good marketing company is near impossible nowdays, these guys are straight forward, pricing is fair plus they didn't try to up-sell us and that's refreshing we also got our own agent assigned to us instead of just a customer service number, that made communication so much easier</p>
+      <div class="tp-footer">
+        <span class="tp-author">Daniel Infante</span>
+        <span class="tp-date">July 09, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Great experience and explanation of how…</p>
+      <p class="tp-text">Great experience and explanation of how everything works.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Juan Morales</span>
+        <span class="tp-date">July 09, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Sebastian did an outstanding job…</p>
+      <p class="tp-text">Sebastian did an outstanding job putting together our website. From start to finish, his communication was excellent, and he kept us informed throughout the entire process. He listened to what we wanted, brought great ideas to the table, and delivered a professional website that exceeded our expectations.I highly recommend Stone Systems for anyone looking for marketing and website services. If you’re looking for a company that truly cares about its clients and delivers quality work, Sebastian and the team are the ones to call!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Shawn Wight</span>
+        <span class="tp-date">July 08, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Expecting Perfect</p>
+      <p class="tp-text">Nothing is perfect and should not be expected. What you should expect when working with any professional is that when it’s not perfect, they work through it, answering concerns, addressing misstep's quickly, coming up with the solution, makes it happen….PERFECT! Stone Systems has provided that kind of service. I don’t need to meet the boss, Sebastian is the man!</p>
+      <div class="tp-footer">
+        <span class="tp-author">William Wade</span>
+        <span class="tp-date">July 07, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Recommend 100%</p>
+      <p class="tp-text">Took the time to go over everything with me 100% recommend him!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Darin Dickinson</span>
+        <span class="tp-date">July 07, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">The team is on top of it!</p>
+      <p class="tp-text">The team is on top of it! All of the updates I requested were addressed immediately, making for a great experience. Thank you to the stone systems team!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Ruben</span>
+        <span class="tp-date">July 07, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Adrian has been awesome to work with</p>
+      <p class="tp-text">Adrian has been awesome to work with. We started with Stone Systems about a month and a half ago and we already see a difference in our google business performance. Excited to continue with them and see how they help us grow!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Julz Elsea</span>
+        <span class="tp-date">July 07, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Excellent work Manuel</p>
+      
+      <div class="tp-footer">
+        <span class="tp-author">Curtis Pepper</span>
+        <span class="tp-date">July 07, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Jose</p>
+      <p class="tp-text">Jose, thank you so much for your help.Thanks for your time.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Samuel S Arellano</span>
+        <span class="tp-date">July 07, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Andreas has been great to work with</p>
+      <p class="tp-text">Andreas has been great to work with. He’s been great at helping me get my website issues taken care of</p>
+      <div class="tp-footer">
+        <span class="tp-author">Damien S</span>
+        <span class="tp-date">July 07, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Andres Lopez helped me with my website…</p>
+      <p class="tp-text">Andres Lopez helped me with my website and I love it!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Mavrick</span>
+        <span class="tp-date">July 07, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">My CSM Zac was amazing</p>
+      <p class="tp-text">My CSM Zac was amazing. He helped me throughout the whole process and was patient.Zac answered any questions I had and helped me with changes to my website on the spot. Great guy. Happy to know he’s here to help!</p>
+      <div class="tp-footer">
+        <span class="tp-author">ANDY CRUZ-SAAVEDRA</span>
+        <span class="tp-date">July 06, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">A+++</p>
+      <p class="tp-text">High end website great communication highly recommended</p>
+      <div class="tp-footer">
+        <span class="tp-author">B Louallen</span>
+        <span class="tp-date">July 04, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">These guys updated my entire website…</p>
+      <p class="tp-text">These guys updated my entire website and added ai to help with the leads, now I'm actually getting jobs from my website and getting a great deal as well thank you guys!</p>
+      <div class="tp-footer">
+        <span class="tp-author">All-in Contracting</span>
+        <span class="tp-date">July 01, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Excelent service</p>
+      <p class="tp-text">Excelent service! they were able to get people on my website and got some jobs lined up!!</p>
+      <div class="tp-footer">
+        <span class="tp-author">Alejo Cristancho</span>
+        <span class="tp-date">June 24, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Love working with Alan</p>
+      <p class="tp-text">Love working with Alan. He is the man. Honest company great price</p>
+      <div class="tp-footer">
+        <span class="tp-author">Steven Peters</span>
+        <span class="tp-date">June 18, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">very fair</p>
+      <p class="tp-text">very fair. knowledgeable about the market and very honest</p>
+      <div class="tp-footer">
+        <span class="tp-author">Allan Troyo</span>
+        <span class="tp-date">June 18, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">I am very excited seeing what they are…</p>
+      <p class="tp-text">I am very excited seeing what they are capable of producing for our business</p>
+      <div class="tp-footer">
+        <span class="tp-author">McKay Christensen</span>
+        <span class="tp-date">June 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">The experience of working with StoneFantastic…</p>
+      <p class="tp-text">The experience of working with Stone Systems has been fantastic. These guys are highly Motivated, which gives me confidence in the system. I look forward to a great relationship with Stone Systems and posting positive reviews as my business grows.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Hector</span>
+        <span class="tp-date">June 17, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Really good experience</p>
+      <p class="tp-text">Really good experience so far! They dont try to upsell you for things that you dont need right away,it actually feels like we are working together instead of them just taking your money. Can't wait to see how it all turns out.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Pavle Bajic</span>
+        <span class="tp-date">June 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#e8a743">★★★★☆</span>
+        <span class="tp-rating-num">4.0</span>
+      </div>
+      <p class="tp-title">Just started out with them so far so…</p>
+      <p class="tp-text">Just started out with them so far so good will keep you informed</p>
+      <div class="tp-footer">
+        <span class="tp-author">Samuel Van Beke</span>
+        <span class="tp-date">June 16, 2026</span>
+      </div>
+    </div>
+    <div class="tp-card">
+      <div class="tp-card-header">
+        <span class="tp-stars" style="color:#00b67a">★★★★★</span>
+        <span class="tp-rating-num">5.0</span>
+      </div>
+      <p class="tp-title">Stone Systems is a great company to…</p>
+      <p class="tp-text">Stone Systems is a great company to work with the gets your company leads.</p>
+      <div class="tp-footer">
+        <span class="tp-author">Eric Shirk</span>
+        <span class="tp-date">June 16, 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2026 Stone Systems. All rights reserved. &nbsp;|&nbsp; <a href="https://stonesystems.io" target="_blank">stonesystems.io</a></p>
+  <p style="margin-top:8px; font-size:13px; opacity:0.6">stonesystemsreviews.com</p>
+</footer>
+
+<script>
+const videoData = [
+  {
+    "company": "Troy's Trash",
+    "niche": "Moving Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/e62e80fb-1ec6-40c7-b63c-4bb4764f5494/1776307300754.mp4"
+  },
+  {
+    "company": "Aspira Concrete Solutions",
+    "niche": "Concrete & Masonry",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/4ecb27b5-a10a-4472-8c75-d97082f311e8/7ee30308-5e2c-41bb-a79e-bd977c6ae022/1776977719307.mp4"
+  },
+  {
+    "company": "New England Siding LLC",
+    "niche": "General Contractor",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/68884b0c-66a1-4231-bb4f-121f84674ca9/1776986543187.mov"
+  },
+  {
+    "company": "RAM Construction & Remodel",
+    "niche": "General Contractor",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/e6647295-6b67-4155-a2e2-d4da0444d4ce/1777056369432.mov"
+  },
+  {
+    "company": "Upside Roofing & Siding",
+    "niche": "Roofing",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/48762444-8517-4ae6-a461-606c04025448/1777072742573.mp4"
+  },
+  {
+    "company": "South Shore Enterprises LLC",
+    "niche": "General Contractor",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/af913553-2341-445d-9e26-7255b64648a0/6ff19a7f-994c-4492-bf19-7a44ed188437/1777581722796.mov"
+  },
+  {
+    "company": "Upside Roofing & Siding",
+    "niche": "Roofing",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/48762444-8517-4ae6-a461-606c04025448/1777603777199.MOV"
+  },
+  {
+    "company": "Brink Painting and Construction LLC",
+    "niche": "Painting",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/32b2eb6a-41a3-4e22-91c8-e119d9ad201e/1777672757977.mp4"
+  },
+  {
+    "company": "Mills Driveway and Patio Sealing",
+    "niche": "Other Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/c5c6d20e-6c0c-4094-979a-58338b3312ff/1778275278498.mov"
+  },
+  {
+    "company": "A to Z Painting LLC",
+    "niche": "Painting",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/f5b872c8-b993-4713-bc52-21359ac3dacd/1778611839786.mp4"
+  },
+  {
+    "company": "Avery Roof Services",
+    "niche": "Roofing",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/1a560b0b-e4ee-4d5f-8410-7c5aec749b31/1778768933412.mp4"
+  },
+  {
+    "company": "Malcolm Bros Roofing",
+    "niche": "Roofing",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/4dc30d4c-f796-42aa-a3cd-5b40ee17bcd5/db5770c0-a21a-4fa2-965a-e22bfc8dd993/1779913581013.mp4"
+  },
+  {
+    "company": "Adams Drywall And Paint",
+    "niche": "General Contractor",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/4dc30d4c-f796-42aa-a3cd-5b40ee17bcd5/e4503388-ec9c-40b3-8f1c-2887496cbca7/1779992522106.mp4"
+  },
+  {
+    "company": "Edwards Sealcoating and Asphalt",
+    "niche": "Concrete & Masonry",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/617eb91c-64f9-49a3-a071-6d3dc318ab90/fc893da1-a5e8-4eda-ba8d-6df71c417e5f/1780340072248.mpg4"
+  },
+  {
+    "company": "A.S.B. Renovation Design & Build LLC",
+    "niche": "General Contractor",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/70b98520-7fa0-415c-9824-30c012aaae6e/dffedf81-6854-4e6d-ad84-a226c52975fb/1780430286850.mp4"
+  },
+  {
+    "company": "Out & In Concrete",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/f15ad10c-97f9-4315-8c55-2636309b8538/1780437118934.mp4"
+  },
+  {
+    "company": "Kenai Construction",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/70b98520-7fa0-415c-9824-30c012aaae6e/a305fb1a-204a-46a2-9475-5e8ba95d4e03/1780685653133.mp4"
+  },
+  {
+    "company": "Groundworks Flooring LLC",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/617eb91c-64f9-49a3-a071-6d3dc318ab90/633b20cd-ab5a-4f25-b66c-be977c5f90ad/1781278682970.mov"
+  },
+  {
+    "company": "Ridge Line Landscaping",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/617eb91c-64f9-49a3-a071-6d3dc318ab90/48fe1fb1-9e0f-4843-b958-ee07905049d8/1781545977270.MOV"
+  },
+  {
+    "company": "Four Seasons Painting Services",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/70b98520-7fa0-415c-9824-30c012aaae6e/4506cc7b-0b7d-4f39-a271-fb03992075cb/1781695485049.mp4"
+  },
+  {
+    "company": "Affordable Gutter Guards Colorado",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/40c0487b-b261-438a-b7bf-32e118e84c1c/6cbbe281-235b-4f41-9d14-36d88aec1293/1781817709845.mp4"
+  },
+  {
+    "company": "Brunner Builders 513",
+    "niche": "General Contractor",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/70b98520-7fa0-415c-9824-30c012aaae6e/890909c8-9574-4ef4-b7bd-2b81f7738fad/1782132498589.mp4"
+  },
+  {
+    "company": "Allied Roofing",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3cfc6f4-90e5-4b94-a327-842d209fbf34/fd06979d-0077-468a-858e-2a4f066a21e6/1782141725207.mp4"
+  },
+  {
+    "company": "Rawlings Heating And A/C",
+    "niche": "HVAC",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/70b98520-7fa0-415c-9824-30c012aaae6e/1c20df0b-2514-47ca-b98a-7b884bea9738/1782589567410.mp4"
+  },
+  {
+    "company": "BullsEye Exteriors",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3e25ba6-9d95-4b75-82e3-d3eb6bb6b138/ebc08187-cc2d-4924-8e0b-8764d21b5b1a/1782756626787.mp4"
+  },
+  {
+    "company": "The B's Renovations and Upgrades",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3e25ba6-9d95-4b75-82e3-d3eb6bb6b138/eb691fef-5087-4238-adba-6074cab3e615/1782868248091.mp4"
+  },
+  {
+    "company": "Rescreening 4 Less",
+    "niche": "Windows & Doors",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/4dc30d4c-f796-42aa-a3cd-5b40ee17bcd5/89bfc8e8-e9ed-4e04-a349-4f24155c1e31/1783013003578.mp4"
+  },
+  {
+    "company": "Greg's Roofing LLC",
+    "niche": "Home Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/4ecb27b5-a10a-4472-8c75-d97082f311e8/fc16c2d1-da19-4445-842a-f7e9e978bfad/1783097943050.mp4"
+  },
+  {
+    "company": "EverClearPools",
+    "niche": "Pool & Spa",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/4dc30d4c-f796-42aa-a3cd-5b40ee17bcd5/68bb4e45-4df7-49b1-8407-642803bbfe1c/1783376534191.mp4"
+  },
+  {
+    "company": "WB Paving",
+    "niche": "Concrete & Masonry",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3e25ba6-9d95-4b75-82e3-d3eb6bb6b138/f8cf4800-1c61-4d0b-a089-a61ecdbc21f1/1783396303124.mp4"
+  },
+  {
+    "company": "Mountain Man Roofing",
+    "niche": "Roofing",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3e25ba6-9d95-4b75-82e3-d3eb6bb6b138/79c2ec76-88fb-446b-bd17-ab88d9f6627d/1784043680582.mp4"
+  },
+  {
+    "company": "American Power Washing & Exterior Services",
+    "niche": "Cleaning Services",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/af913553-2341-445d-9e26-7255b64648a0/89be263e-efd4-4e3d-9ef0-44c44cbb0eaf/1784914716434.mpg"
+  },
+  {
+    "company": "Blue J Paint & Stain",
+    "niche": "Painting",
+    "video": "https://ctrzyzdoutqelvlwamyi.supabase.co/storage/v1/object/public/testimonials/e3e25ba6-9d95-4b75-82e3-d3eb6bb6b138/3c888476-b871-43db-b25f-db907f052531/1785548849953.mp4"
+  }
+];
+
+function renderVideos() {
+  const grid = document.getElementById('video-grid');
+  videoData.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'video-card';
+    card.innerHTML = `
+      <video preload="none" controls playsinline style="width:100%;height:220px;object-fit:cover;background:#1a1a2e;" data-src="${item.video}">
+        Your browser does not support video playback.
+      </video>
+      <div class="video-card-info">
+        <div class="video-company">${item.company}</div>
+        <span class="video-niche">${item.niche}</span>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  // Lazy load videos with IntersectionObserver
+  const videos = document.querySelectorAll('video[data-src]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        const src = video.getAttribute('data-src');
+        if (src && !video.src) {
+          video.src = src;
+          video.load();
+        }
+        observer.unobserve(video);
+      }
+    });
+  }, { rootMargin: '200px' });
+
+  videos.forEach(v => observer.observe(v));
+}
+
+renderVideos();
+</script>
+</body>
+</html>
