@@ -26,7 +26,7 @@
     .header-fallback{font-weight:900;font-size:22px;color:var(--blue);display:none}
 
     /* VSL SECTION */
-    .vsl-section{background:var(--blue);padding:32px 16px 5px;text-align:center}
+    .vsl-section{background:var(--blue);padding:32px 16px 60px;text-align:center;clip-path:ellipse(120% 100% at 50% 0%)}
     .vsl-headline{font-size:clamp(20px,5vw,42px);font-weight:900;color:#fff;line-height:1.25;margin-bottom:28px;max-width:800px;margin-left:auto;margin-right:auto;padding:0 8px}
     .vsl-headline span{color:var(--yellow)}
     .vsl-subline{font-size:clamp(18px,3vw,32px);font-weight:900;color:#fff;font-style:italic;margin-bottom:32px}
@@ -45,6 +45,7 @@
     .section{padding:64px 24px}
     .section-gray{background:var(--gray)}
     .section-white{background:var(--white)}
+    .scroll-nudge-text{text-align:center;color:var(--text-gray);font-size:14px;font-weight:600;margin-bottom:16px;letter-spacing:.3px}
     .section-label{text-align:center;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--yellow);margin-bottom:10px}
     .section-title{font-size:clamp(22px,4vw,40px);font-weight:900;color:var(--blue);text-align:center;margin-bottom:8px;line-height:1.2}
     .video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1200px;margin:0 auto}
@@ -92,12 +93,6 @@
     .tp-date{font-size:11px;color:#aaa}
     .section-cta{background:var(--blue);padding:40px 24px;text-align:center}
     .cta-line{color:rgba(255,255,255,.85);font-size:clamp(16px,2.5vw,20px);font-weight:600;margin-bottom:20px}
-    .wave-divider{display:block;width:100%;overflow:hidden;line-height:0;background:var(--blue)}
-    .wave-divider svg{display:block;width:100%}
-    .scroll-nudge{background:var(--blue);text-align:center;padding:0 24px 28px}
-    .scroll-nudge p{color:rgba(255,255,255,.6);font-size:14px;font-weight:600;letter-spacing:.5px;animation:bounce 2s infinite}
-    .scroll-nudge .arrow{font-size:22px;display:block;margin-top:4px;color:var(--yellow)}
-    @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
     .site-footer{background:var(--blue);color:rgba(255,255,255,.65);text-align:center;padding:36px 24px;font-size:14px;line-height:1.8}
     .site-footer a{color:var(--yellow);text-decoration:none}
     .site-footer a:hover{color:var(--dark-yellow)}
@@ -120,16 +115,8 @@
 
 </section>
 
-<div class="scroll-nudge">
-  <p>See what other contractors say below</p>
-  <span class="arrow">↓</span>
-</div>
-<div class="wave-divider">
-  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" height="60">
-    <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="#1f2236"/>
-  </svg>
-</div>
 <section class="section section-gray">
+  <p class="scroll-nudge-text">&#128071; See what other contractors say</p>
   <p class="section-label">Video Testimonials</p>
   <h2 class="section-title">Our Clients Tell It Better Than We Do</h2>
   <div class="video-grid" id="video-grid"></div>
