@@ -393,22 +393,28 @@ const videoData=[{"company": "Dale", "niche": "Contractor", "video": "https://st
   }else{videos.forEach(function(v){v.src=v.getAttribute('data-src');v.load();});}
 })();
 
-  // Masonry: distribute cards round-robin into 3 columns (left-to-right order)
+  // Masonry: place each card in the shortest column so best cards are at the top
   function buildMasonry(gridId, colClass) {
-    const grid = document.getElementById(gridId);
+    var grid = document.getElementById(gridId);
     if (!grid) return;
-    const cards = Array.from(grid.children);
-    // Create 3 columns
-    const cols = [0,1,2].map(function() {
-      const col = document.createElement('div');
+    var cards = Array.from(grid.children);
+    var numCols = window.innerWidth <= 540 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+    var cols = [];
+    for (var i = 0; i < numCols; i++) {
+      var col = document.createElement('div');
       col.className = colClass;
-      return col;
+      grid.appendChild(col);
+      cols.push(col);
+    }
+    // First numCols cards go one per column (top row)
+    // Then each subsequent card goes into the shortest column
+    cards.forEach(function(card) {
+      // Find shortest column by scrollHeight
+      var shortest = cols.reduce(function(a, b) {
+        return a.scrollHeight <= b.scrollHeight ? a : b;
+      });
+      shortest.appendChild(card);
     });
-    // Round-robin distribution: card 0→col0, card 1→col1, card 2→col2, card 3→col0...
-    cards.forEach(function(card, i) {
-      cols[i % 3].appendChild(card);
-    });
-    cols.forEach(function(col) { grid.appendChild(col); });
   }
 
   buildMasonry('g-grid', 'g-col');
