@@ -92,6 +92,12 @@
     .tp-date{font-size:11px;color:#aaa}
     .section-cta{background:var(--blue);padding:40px 24px;text-align:center}
     .cta-line{color:rgba(255,255,255,.85);font-size:clamp(16px,2.5vw,20px);font-weight:600;margin-bottom:20px}
+    .wave-divider{display:block;width:100%;overflow:hidden;line-height:0;background:var(--blue)}
+    .wave-divider svg{display:block;width:100%}
+    .scroll-nudge{background:var(--blue);text-align:center;padding:0 24px 28px}
+    .scroll-nudge p{color:rgba(255,255,255,.6);font-size:14px;font-weight:600;letter-spacing:.5px;animation:bounce 2s infinite}
+    .scroll-nudge .arrow{font-size:22px;display:block;margin-top:4px;color:var(--yellow)}
+    @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
     .site-footer{background:var(--blue);color:rgba(255,255,255,.65);text-align:center;padding:36px 24px;font-size:14px;line-height:1.8}
     .site-footer a{color:var(--yellow);text-decoration:none}
     .site-footer a:hover{color:var(--dark-yellow)}
@@ -114,6 +120,15 @@
 
 </section>
 
+<div class="scroll-nudge">
+  <p>See what other contractors say below</p>
+  <span class="arrow">↓</span>
+</div>
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" height="60">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="#1f2236"/>
+  </svg>
+</div>
 <section class="section section-gray">
   <p class="section-label">Video Testimonials</p>
   <h2 class="section-title">Our Clients Tell It Better Than We Do</h2>
