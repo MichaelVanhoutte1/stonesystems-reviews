@@ -48,10 +48,8 @@
     .google-header{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
     .rating-badge{display:flex;align-items:center;gap:10px;background:var(--white);border:2px solid var(--yellow);border-radius:50px;padding:10px 28px;font-weight:700;font-size:16px;color:var(--blue);margin:0 auto 36px;width:fit-content}
     .rating-badge .stars{color:var(--yellow);font-size:20px}
-    .g-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1200px;margin:0 auto}
-    @media(max-width:900px){.g-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:540px){.g-grid{grid-template-columns:1fr}}
-    .g-card{background:var(--white);border-radius:var(--radius);box-shadow:0 3px 16px rgba(0,0,0,.07);padding:20px;margin-bottom:18px;border-top:3px solid #4285F4}
+    .g-grid{display:flex;gap:18px;max-width:1200px;margin:0 auto;align-items:flex-start}.g-col{flex:1;display:flex;flex-direction:column;gap:18px}@media(max-width:900px){.g-grid .g-col:last-child{display:none}}@media(max-width:540px){.g-grid{flex-direction:column}.g-grid .g-col:not(:first-child){display:none}}
+    .g-card{background:var(--white);border-radius:var(--radius);box-shadow:0 3px 16px rgba(0,0,0,.07);padding:20px;border-top:3px solid #4285F4}
     .g-card-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
     .g-avatar{width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
     .g-author{font-weight:700;font-size:14px}
@@ -61,10 +59,8 @@
     .tp-branding{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:12px}
     .tp-logo-mark{background:#00b67a;color:#fff;font-size:15px;font-weight:900;padding:5px 10px;border-radius:5px}
     .tp-logo-text{font-weight:800;font-size:18px;color:#333}
-    .tp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1200px;margin:0 auto}
-    @media(max-width:900px){.tp-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:540px){.tp-grid{grid-template-columns:1fr}}
-    .tp-card{background:var(--white);border-radius:var(--radius);box-shadow:0 3px 14px rgba(0,0,0,.07);padding:18px 20px;margin-bottom:18px;border-left:4px solid #00b67a}
+    .tp-grid{display:flex;gap:18px;max-width:1200px;margin:0 auto;align-items:flex-start}.tp-col{flex:1;display:flex;flex-direction:column;gap:18px}@media(max-width:900px){.tp-grid .tp-col:last-child{display:none}}@media(max-width:540px){.tp-grid{flex-direction:column}.tp-grid .tp-col:not(:first-child){display:none}}
+    .tp-card{background:var(--white);border-radius:var(--radius);box-shadow:0 3px 14px rgba(0,0,0,.07);padding:18px 20px;border-left:4px solid #00b67a}
     .tp-stars{font-size:17px;margin-bottom:8px;display:block}
     .tp-title{font-weight:700;font-size:13px;margin-bottom:7px;color:var(--blue);line-height:1.4}
     .tp-text{font-size:13px;line-height:1.65;color:#444;margin-bottom:12px}
@@ -395,6 +391,28 @@ const videoData=[{"company": "Dale", "niche": "Contractor", "video": "https://st
     const obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){const v=e.target,src=v.getAttribute('data-src');if(src&&!v.src){v.src=src;v.load();}obs.unobserve(v);}});},{rootMargin:'300px'});
     videos.forEach(function(v){obs.observe(v);});
   }else{videos.forEach(function(v){v.src=v.getAttribute('data-src');v.load();});}
+})();
+
+  // Masonry: distribute cards round-robin into 3 columns (left-to-right order)
+  function buildMasonry(gridId, colClass) {
+    const grid = document.getElementById(gridId);
+    if (!grid) return;
+    const cards = Array.from(grid.children);
+    // Create 3 columns
+    const cols = [0,1,2].map(function() {
+      const col = document.createElement('div');
+      col.className = colClass;
+      return col;
+    });
+    // Round-robin distribution: card 0→col0, card 1→col1, card 2→col2, card 3→col0...
+    cards.forEach(function(card, i) {
+      cols[i % 3].appendChild(card);
+    });
+    cols.forEach(function(col) { grid.appendChild(col); });
+  }
+
+  buildMasonry('g-grid', 'g-col');
+  buildMasonry('tp-grid', 'tp-col');
 })();
 </script>
 </body>
