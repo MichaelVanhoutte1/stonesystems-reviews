@@ -54,9 +54,10 @@
     .google-header{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
     .rating-badge{display:flex;align-items:center;gap:10px;background:var(--white);border:2px solid var(--yellow);border-radius:50px;padding:10px 28px;font-weight:700;font-size:16px;color:var(--blue);margin:0 auto 36px;width:fit-content}
     .rating-badge .stars{color:var(--yellow);font-size:20px}
-    .g-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto}
-    @media(max-width:600px){.g-grid{grid-template-columns:1fr}}
-    .g-card{background:var(--white);border-radius:var(--radius);box-shadow:0 3px 16px rgba(0,0,0,.07);padding:20px;border-top:3px solid #4285F4}
+    .g-grid{columns:3;column-gap:18px;max-width:1200px;margin:0 auto}
+    @media(max-width:900px){.g-grid{columns:2}}
+    @media(max-width:540px){.g-grid{columns:1}}
+    .g-card{break-inside:avoid;background:var(--white);border-radius:var(--radius);box-shadow:0 3px 16px rgba(0,0,0,.07);padding:20px;margin-bottom:18px;border-top:3px solid #4285F4}
     .g-card-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
     .g-avatar{width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
     .g-author{font-weight:700;font-size:14px}
@@ -110,7 +111,7 @@
   <div class="video-grid" id="video-grid"></div>
 </section>
 
-<section class="section section-gray">
+<section class="section section-white">
   <div class="google-header">
     <svg width="22" height="22" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
       <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.08 17.74 9.5 24 9.5z"/>
@@ -120,7 +121,7 @@
     </svg>
     <h2 class="section-title" style="margin-bottom:0">Rated 4.8 ★ on Google</h2>
   </div>
-  <p class="section-sub">Based on 56+ verified reviews</p>
+  <p class="section-sub">36 positive reviews from verified Google customers</p>
   <div class="rating-badge">
     <span class="stars">★★★★★</span>
     <span>4.8 / 5 &nbsp;·&nbsp; 56+ Google Reviews</span>
@@ -129,52 +130,404 @@
 
     <div class="g-card">
       <div class="g-card-top">
-        <div class="g-avatar">G</div>
+        <div class="g-avatar">E</div>
         <div>
-          <div class="g-author">Gary Brizard</div>
-          <div class="g-time">5 months ago</div>
+          <div class="g-author">Elizabeth Carrillo</div>
+          <div class="g-time">August 2026</div>
         </div>
       </div>
       <div class="g-stars">★★★★★</div>
-      <p class="g-text">We have always had a great experience at Stone Systems. They have a great selection and the people are friendly and helpful. Working with them has been fantastic.</p>
+      <p class="g-text">great information given by all team members, i appreciate the knowledge given to us to better our business.</p>
     </div>
     <div class="g-card">
       <div class="g-card-top">
-        <div class="g-avatar">M</div>
+        <div class="g-avatar">B</div>
         <div>
-          <div class="g-author">M JT</div>
-          <div class="g-time">4 weeks ago</div>
+          <div class="g-author">Brandon Gilbert</div>
+          <div class="g-time">August 2026</div>
         </div>
       </div>
       <div class="g-stars">★★★★★</div>
-      <p class="g-text">Beautiful product and among the highest quality and customer service. Highly recommend Stone Systems!</p>
+      <p class="g-text">Great company and people</p>
     </div>
     <div class="g-card">
       <div class="g-card-top">
-        <div class="g-avatar">N</div>
+        <div class="g-avatar">C</div>
         <div>
-          <div class="g-author">Nasim Shamsaei</div>
-          <div class="g-time">4 years ago</div>
+          <div class="g-author">casey ladoux</div>
+          <div class="g-time">August 2026</div>
         </div>
       </div>
       <div class="g-stars">★★★★★</div>
-      <p class="g-text">These people are fantastic. A perfect team to work with. One of the best companies I have ever worked with.</p>
+      <p class="g-text">Website turned out awesome. Looking forward to future growth with your help...</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">S</div>
+        <div>
+          <div class="g-author">Sio2</div>
+          <div class="g-time">August 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">So far so good. Listens to my concerns and responds with care.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">K</div>
+        <div>
+          <div class="g-author">Kelly Hamilton</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Well detailed, and well presented and took time to answer any questions.</p>
     </div>
     <div class="g-card">
       <div class="g-card-top">
         <div class="g-avatar">E</div>
         <div>
-          <div class="g-author">Eric B</div>
-          <div class="g-time">5 years ago</div>
+          <div class="g-author">Erik Charles</div>
+          <div class="g-time">June 2026</div>
         </div>
       </div>
       <div class="g-stars">★★★★★</div>
-      <p class="g-text">I am now happy with the purchase. Stone Systems handled a concern professionally and made it right. Great experience overall.</p>
+      <p class="g-text">Sergio is amazing! Great working with him and the team.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">R</div>
+        <div>
+          <div class="g-author">Randy Rodriguez</div>
+          <div class="g-time">August 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">TJ was great!  He was very helpful and professional.  We loo forward to working with him.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">T</div>
+        <div>
+          <div class="g-author">Travis Lassiter</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">TJ is fantastic. Knowledgeable and patient, carefully explained everything</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">G</div>
+        <div>
+          <div class="g-author">Garlon Guerin</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">M</div>
+        <div>
+          <div class="g-author">Matt Corley</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Stone systems goes to bat for you and communication has been great!</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">C</div>
+        <div>
+          <div class="g-author">Carmine Colantuono</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">G</div>
+        <div>
+          <div class="g-author">Gabriel Ruiz</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Great customer service.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">S</div>
+        <div>
+          <div class="g-author">Steve Rudas Jr</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">T</div>
+        <div>
+          <div class="g-author">the outdoors man</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Great customer service</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">B</div>
+        <div>
+          <div class="g-author">Brenda Sanders</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Manuel was very patient with us and very informative on how to get our website going and how get more Leads. Great Customer Service</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">G</div>
+        <div>
+          <div class="g-author">Gabriel Peppers</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Sergio is amazing at what he does. Very informative and always thinking outside the box. Always a pleasure dealing with him. Thanks for everything!</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">C</div>
+        <div>
+          <div class="g-author">Cesar Souza</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">C</div>
+        <div>
+          <div class="g-author">Caleb Yaeger</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">They were very helpful and got eveyrbtung set up</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">R</div>
+        <div>
+          <div class="g-author">Rod Reid</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Very professional and made our launch seemless.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">T</div>
+        <div>
+          <div class="g-author">Taylor Hankins</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">J</div>
+        <div>
+          <div class="g-author">Joel</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Stone Systems has been great to work with. Their customer service is spot on, any time I have an issue or want to update my website they get on it immediately. My web presence, google reviews, and client base have increased significantly since starting with them about 7 months ago and I believe that it will continue to grow exponentially as I continue to use their many services. It has been totally worth the investment and I plan to continue using Stone Systems moving forward.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">T</div>
+        <div>
+          <div class="g-author">tyler stage</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Overall, very satisfied with Stone Systems. The website came out great and they welcome any changes I need. The CRM is user friendly and they helped me set up campaigns. Happy with where I am at.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">C</div>
+        <div>
+          <div class="g-author">Connor Doyle</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Great experience from start to finish. Mike and the team are professional, responsive, and delivered exactly what he promised. Highly recommend to anyone looking.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">L</div>
+        <div>
+          <div class="g-author">Lorenzo Sanchez</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">I personally know the owners, Kai and Mike, and can attest that they are some of the leading experts at web design and marketing for local service businesses. Not only are they great at what they do, but they are genuinely good people. It's a pleasure working with them!</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">L</div>
+        <div>
+          <div class="g-author">Larry Owens</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Sebastian Idarraga with Stone System is amazing. He walked me through everything I need to get started with these guys. He and his team did a great job on my website and everything else they have done for me.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">J</div>
+        <div>
+          <div class="g-author">Jureimi Ibarra</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">M</div>
+        <div>
+          <div class="g-author">Manuel Ojeda Servián</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Stone systems is a different kind of company. I’ve been working with Michael and the rest of the team for a little while now and they are extremely professional. The onboarding was seamless and umer helped me get on track. Best decision to work with them.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">B</div>
+        <div>
+          <div class="g-author">Blain Moos</div>
+          <div class="g-time">November 2025</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Stone Systems is a very rock solid company to work with. They are very professional and do what they promise to do! Best company I have worked with after 9 years in business!</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">B</div>
+        <div>
+          <div class="g-author">Brian Sumpf</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">E</div>
+        <div>
+          <div class="g-author">Eric Fasnacht</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Great experience!</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">A</div>
+        <div>
+          <div class="g-author">ACC Office</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">We have been very happy with Stone Systems. Their Lead Generator app and the ability to text back and forth with customers has been huge! More popular with the customers than we could have imagined. Our sales rep is great and very responsive whenever we have a problem. Highly recommend.</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">C</div>
+        <div>
+          <div class="g-author">Clear Choice Construction LLC</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">B</div>
+        <div>
+          <div class="g-author">Brian Sommers</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Love the support and expertise.  Highly recommend!</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">R</div>
+        <div>
+          <div class="g-author">Ralph Wehnes</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Lots of reviews</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">J</div>
+        <div>
+          <div class="g-author">Jason Butts</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Top notch professional method to accelerate your presence in the world!</p>
+    </div>
+    <div class="g-card">
+      <div class="g-card-top">
+        <div class="g-avatar">L</div>
+        <div>
+          <div class="g-author">Lee Lewis</div>
+          <div class="g-time">July 2026</div>
+        </div>
+      </div>
+      <div class="g-stars">★★★★★</div>
+      <p class="g-text">Easy to work with and good results.</p>
     </div>
   </div>
 </section>
 
-<section class="section section-white">
+<section class="section section-gray">
   <div class="tp-branding">
     <span class="tp-logo-mark">★</span>
     <span class="tp-logo-text">Trustpilot</span>
