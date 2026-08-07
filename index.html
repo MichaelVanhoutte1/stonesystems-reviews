@@ -71,6 +71,15 @@
     .tp-footer{display:flex;justify-content:space-between;align-items:center;padding-top:8px;border-top:1px solid #f0f0f0}
     .tp-author{font-weight:700;font-size:12px;color:#111}
     .tp-date{font-size:11px;color:#aaa}
+    .widget-badge{display:flex;align-items:center;gap:8px;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;padding:6px 14px;width:fit-content;margin:0 auto 16px;font-size:13px;font-weight:700;color:#444}
+    .widget-verified{background:#e8f5e9;color:#2e7d32;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.5px}
+    .widget-header-box{background:#f8f9fa;border:1px solid #e8e8e8;border-radius:12px;padding:24px 32px;max-width:340px;margin:0 auto 40px;text-align:center}
+    .widget-score{display:flex;align-items:center;justify-content:center;gap:16px}
+    .widget-score-num{font-size:52px;font-weight:900;color:var(--blue);line-height:1}
+    .widget-stars-lg{color:var(--yellow);font-size:22px;margin-bottom:4px}
+    .widget-count{font-size:13px;color:var(--text-gray)}
+    .section-cta{background:var(--blue);padding:40px 24px;text-align:center}
+    .cta-line{color:rgba(255,255,255,.85);font-size:clamp(16px,2.5vw,20px);font-weight:600;margin-bottom:20px}
     .site-footer{background:var(--blue);color:rgba(255,255,255,.65);text-align:center;padding:36px 24px;font-size:14px;line-height:1.8}
     .site-footer a{color:var(--yellow);text-decoration:none}
     .site-footer a:hover{color:var(--dark-yellow)}
@@ -99,12 +108,20 @@
   <div class="video-grid" id="video-grid"></div>
 </section>
 <section class="section section-white">
-  <div class="google-header">
-    <svg width="22" height="22" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.08 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-3.59-13.46-8.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
-    <h2 class="section-title" style="margin-bottom:0">Rated 4.8 ★ on Google</h2>
+  <div class="widget-badge">
+    <svg width="18" height="18" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.08 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-3.59-13.46-8.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+    <span>Google Reviews</span>
+    <span class="widget-verified">Verified</span>
   </div>
-  <p class="section-sub">166 positive reviews from verified Google customers</p>
-  <div class="rating-badge"><span class="stars">★★★★★</span><span>4.8 / 5 &nbsp;·&nbsp; 235 Google Reviews</span></div>
+  <div class="widget-header-box">
+    <div class="widget-score">
+      <span class="widget-score-num">4.8</span>
+      <div>
+        <div class="widget-stars-lg">★★★★★</div>
+        <div class="widget-count">Based on 235 reviews</div>
+      </div>
+    </div>
+  </div>
   <div class="g-grid">
 <div class="g-card"><div class="g-card-top"><div class="g-avatar">B</div><div><div class="g-author">Ben Leader</div><div class=g-time>August 2024</div></div></div><div class="g-stars">★★★★★</div><p class="g-text">I went as far as to even send these guys a video testimonial for their website because I’m so impressed & can’t say enough good things about how awesome these guys are. Took my self made lame website & turned it into a new age beauty that I can be proud to send to potential clients. As well as all the other things that came along with his package like the auto call text backs for when I’m busy, review funnel & others that I’ll just have to let them explain to you. Ima contractor & im good at my job, these guys are techs & man are they good at there’s & im happy to let them take that part over. Best money I’ve spent in a while🤙</p></div>
 <div class="g-card"><div class="g-card-top"><div class="g-avatar">C</div><div><div class="g-author">Chris G</div><div class=g-time>May 2025</div></div></div><div class="g-stars">★★★★★</div><p class="g-text">These guys are amazing, hands down it’s been a wonderful experience and we have only just begun (roughly 1 month of service). Extremely patient, responsive, and informative. All the collaborations thus far have been great. Website has never worked better and I can’t recommend Stone Systems enough. From my first conversation with Kai to my regular interactions with Remy all are awesome. These guys go above and beyond. If you are looking for their services and you don’t go with them you’re going to regret it. Guys thanks again for all the hard work look forward to our continued relationship.</p></div>
@@ -291,9 +308,20 @@ The gentleman that was helping me get my business ranked on Google not so much. 
   </div>
 </section>
 <section class="section section-gray">
-  <div class="tp-branding"><span class="tp-logo-mark">★</span><span class="tp-logo-text">Trustpilot</span></div>
-  <h2 class="section-title">Rated 4.1 ★ on Trustpilot</h2>
-  <p class="section-sub">103 positive reviews from verified customers</p>
+  <div class="widget-badge" style="background:#00b67a;color:#fff;border-color:#00b67a">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    <span>Trustpilot</span>
+    <span class="widget-verified" style="background:rgba(255,255,255,.25);color:#fff">Verified</span>
+  </div>
+  <div class="widget-header-box">
+    <div class="widget-score">
+      <span class="widget-score-num">4.1</span>
+      <div>
+        <div class="widget-stars-lg" style="color:#00b67a">★★★★☆</div>
+        <div class="widget-count">Based on 127 reviews</div>
+      </div>
+    </div>
+  </div>
   <div class="tp-grid">
 <div class="tp-card"><span class="tp-stars" style="color:#00b67a">★★★★★</span><p class=tp-title>⭐⭐⭐⭐⭐</p><p class=tp-text>⭐⭐⭐⭐⭐I’ve been working with Stone Systems for the past two months, and my experience with this company has been absolutely incredible. They’ve helped redesign my website, handle my calls, schedule clients, and book appointments—making my life as a business owner simpler and allowing me to focus on what I do best.Oscar is the gentleman who has been helping me with everything on the website, and by far, my experience working with him has been fantastic. The entire team is friendly, professional, organized, detailed, and extremely easy to work with.As a small business owner, I’m always very careful about where my money goes and what I’m investing in. I can honestly say that the monthly payment I make to Stone Systems is extremely affordable for everything they do. I’m not overwhelmed with some huge, stressful monthly bill, yet they’re handling services that other companies would charge a small fortune for.What really stands out to me is how much they genuinely care about helping my business grow. They continue to go above and beyond to help get my name and my brand out there. There is so much work that happens behind the scenes that customers never see, and I truly appreciate everything they’re doing to help make my life easier and my business stronger.If you’re a small business owner looking for a company to help with your website, manage your calls and appointments, strengthen your brand, and help your business grow, I highly recommend Stone Systems. Hands down, they have exceeded my expectations.I just want to say thank you to Oscar and the entire team. Thank you for helping me grow. Thank you for believing in my business. And thank you for taking care of all the hard work behind the scenes that nobody sees. I truly appreciate everything you guys do.Five stars all the way. ⭐⭐⭐⭐⭐</p><div class="tp-footer"><span class="tp-author">Jason Rader</span><span class=tp-date>July 16, 2026</span></div></div>
 <div class="tp-card"><span class="tp-stars" style="color:#00b67a">★★★★★</span><p class=tp-title>Sebastian did an outstanding job…</p><p class=tp-text>Sebastian did an outstanding job putting together our website. From start to finish, his communication was excellent, and he kept us informed throughout the entire process. He listened to what we wanted, brought great ideas to the table, and delivered a professional website that exceeded our expectations.I highly recommend Stone Systems for anyone looking for marketing and website services. If you’re looking for a company that truly cares about its clients and delivers quality work, Sebastian and the team are the ones to call!</p><div class="tp-footer"><span class="tp-author">Shawn Wight</span><span class=tp-date>July 08, 2026</span></div></div>
